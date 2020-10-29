@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Seven Worlds Control Panel</title>
+    <link rel="stylesheet" href="Style/main_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css" />
+</head>
+<body>
+
+
+    <div class="container">
+
+        <h1 class="text-center">Seven Worlds Control Panel</h1>
+
+        <h1 id="server_status">Hub Connection: OFFLINE :(</h1>
+
+        <div class="dropdown-divider"></div>
+
+        <form>
+            <div class="form-group">
+                <h1>Start Server</h1>
+                <input class="form-control" id="server_id_input" placeholder="fake_server">
+            </div>
+        </form>
+        <button onclick="startServer()" class="btn btn-primary">Start</button>
+        <button onclick="resetServer()" class="btn btn-warning">Reset Universe Fake Data (Accs and Master Data)</button>
+
+        <!--<h1>Universe Datas</h1>-->
+
+        <!--<table class="table table-striped" id="universe_data_table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Universe Name</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="dropdown-divider"></div>
+        <h1>World Datas</h1>
+
+        <table class="table table-striped" id="world_data_table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">World Name</th>
+                    <th scope="col">Universe Index</th>
+                    <th scope="col">Universe Id</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="dropdown-divider"></div>
+        <h1>Area Datas</h1>
+
+        <table class="table table-striped" id="areas_data_table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">World Id</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="dropdown-divider"></div>
+        <h1>Section Datas</h1>
+
+        <table class="table table-striped" id="sections_data_table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Section Name</th>
+                    <th scope="col">Area Id</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>-->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script src="Scripts/jquery.signalR-2.4.1.js"></script>
+    <script src="https://localhost:44328/signalr/hubs"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
+    <script src="Scripts/helpers.js"></script>
+    <script src="Scripts/index.js"></script>
+
+</body>
+
+
+
+
+</html>
